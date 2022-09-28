@@ -153,25 +153,5 @@ body {
     border-radius: 50%;
     top: 70%;
     left: 35%;
-    opacity: 1;
-    /* transition: 0.2s linear; */
-}
-.drawing .mouth:hover {
-    opacity: 0;
-}
-.mouth .open-mouth{
-    position: absolute;
-    cursor: pointer;
-    height: 15px;
-    width: 50px;
-    background: rgb(214, 190, 139);
-    border: 3px solid black;
-    top: 50%;
-    left: 0%;
-    border-radius: 50%;
-    opacity: 0;
-    /* transition: 0.2s linear; */
-}
-.mouth:hover .open-mouth{
-    opacity: 1;
+   
 }
