@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: whitesmoke;
+
+}
+
+.drawing {
+    height: 180px;
+    width: 150px;
+    margin: auto;
+    border-top-left-radius: 60%;
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 60%;
+    border-bottom-right-radius: 100%;
+    background: rgba(214, 190, 125, 0.975);
+    top: 200px;
+    position: relative;
+}
+.tilak{
+    position: absolute;
+    height: 30px;
+    width: 15px;
+    border: 1px solid red;
+    left: 45%;
+    top: 20px;
+    background: red;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0px 5px 5px 5px rgb(255, 212, 55);
+}
+
+.left-eye {
+    position: absolute;
+    float: left;
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    background: rgba(165, 164, 164, 0.651);
+    border-top: 5px solid black;
+    border-radius: 50%;
+    left: 10px;
+    top: 30%;
+    transition: 0.10s linear;
+}
+.left-eye:hover{
+    background: rgb(214, 190, 139);
+}
+
+.round {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 14px;
+    background: black;
+    top: 3px;
+    border: 1px solid black;
+    border-radius: 50%;
+    opacity: 1;
+    transition: 0.10s linear;
+}
+.left-eye:hover .round{
+    opacity: 0;
+}
+
+.left-eye .down {
+    position: absolute;
+    float: left;
+    height: 25px;
+    width: 40px;
+    border-bottom: 5px solid black;
+    border-radius: 50%;
+    left: 5px;
+    top: 15%;
+    opacity: 0;
+    transition: 0.10s linear;
+}
+.left-eye:hover .down{
+    opacity: 1;
+}
+
+.right-eye {
+    position: absolute;
+    float: right;
+    height: 30px;
+    width: 50px;
+    cursor: pointer;
+    background: rgb(214, 190, 139);
+    border-top: 5px solid black;
+    border-radius: 50%;
+    left: 60%;
+    top: 30%;
+    transition: 0.10s linear;
+
+}
+.right-eye:hover{
+    background: rgba(165, 164, 164, 0.651);
+}
+
+.right-eye .down1 {
+    position: absolute;
+    float: left;
+    height: 25px;
+    width: 40px;
+    border-bottom: 5px solid black;
+    border-radius: 50%;
+    left: 5px;
+    top: 20%;
+    opacity: 1;
+    transition: 0.10s linear;
+}
+.right-eye:hover .down1{
+    opacity: 0;
+}
+
+ .right-eye .round1 {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 14px;
+    background: black;
+    top: 3px;
+    border: 1px solid black;
+    border-radius: 50%;
+    opacity: 0;
+    transition: 0.10s linear;
+
+}
+.right-eye:hover .round1{
+    opacity: 1;
+}
+.nose{
+    position: absolute;
+    height: 25px;
+    width: 40px;
+    background: rgb(214, 190, 139);
+    border-right: 5px solid black;
+    border-radius: 50%;
+    top: 55%;
+    left: 40%;
+}
+.mouth{
+    position: absolute;
+    cursor: pointer;
+    height: 20px;
+    width: 50px;
+    background: rgb(214, 190, 139);
+    border-bottom: 3px solid black;
+    border-radius: 50%;
+    top: 70%;
+    left: 35%;
+    opacity: 1;
+    /* transition: 0.2s linear; */
+}
+.drawing .mouth:hover {
+    opacity: 0;
+}
+.mouth .open-mouth{
+    position: absolute;
+    cursor: pointer;
+    height: 15px;
+    width: 50px;
+    background: rgb(214, 190, 139);
+    border: 3px solid black;
+    top: 50%;
+    left: 0%;
+    border-radius: 50%;
+    opacity: 0;
+    /* transition: 0.2s linear; */
+}
+.mouth:hover .open-mouth{
+    opacity: 1;
+}
